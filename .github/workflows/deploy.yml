@@ -23,6 +23,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.QA_PAT }}
-          repository: https://github.com/muneebamanzoor/QA-Repo
+          repository: muneebamanzoor/QA-Repo
           event-type: run-tests
           client-payload: '{"ref":"${{ github.ref }}","sha":"${{ github.sha }}"}'
